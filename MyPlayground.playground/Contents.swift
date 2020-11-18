@@ -83,3 +83,19 @@ print("Question Number 4")
 print("")
 
 
+var n = 63
+var i = 0
+
+while n > 1{
+    i = n/2
+    n = i
+    print(n)
+}
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 5")
+print("")
+
+var coursesAndStudents = [("MOB", 30), ("BEW", 40), ("FEW", 30), ("DS", 40)]
+
