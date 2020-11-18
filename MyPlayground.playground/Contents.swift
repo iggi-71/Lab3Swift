@@ -60,3 +60,26 @@ print("Green printed this number of times:", green)
 
 print("")
 print("-----------------------------------------------------")
+print("Question Number 3")
+print("")
+
+func fib (_ n: Int) -> Int {
+    guard n > 1 else {return n}
+    var a = 0
+    var b = 1
+    for _ in 2...n {
+        let temp = b
+        b = a + b
+        a = temp
+    }
+    return b
+}
+
+print(fib(7))
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 4")
+print("")
+
+
