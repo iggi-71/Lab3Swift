@@ -99,3 +99,114 @@ print("")
 
 var coursesAndStudents = [("MOB", 30), ("BEW", 40), ("FEW", 30), ("DS", 40)]
 
+for (key, value) in coursesAndStudents {
+   print("There are \(value) students in the \(key) track")
+}
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 6")
+print("")
+
+
+func check( _ arra:[Int]) -> Bool {
+    if arra.first == arra.last
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+
+
+print(check([1, 2, 3]))
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 7")
+print("")
+
+func sumOfAll(_ arra: [Int]) -> Int {
+    return arra.reduce(0, +)
+}
+
+print(sumOfAll([14, 25, 8, 10]))
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 8")
+print("")
+
+func reverse(_ nums: [Int]) -> [Int] {
+    return [nums[2], nums[1], nums[0]]
+}
+
+print(reverse([8, 9, 10]))
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 9")
+print("")
+
+
+func checkString(input: String) -> Bool {
+    var sameLetter = [Character]()
+    for letter in input {
+        if sameLetter.contains(letter) {
+            return false
+        }
+        
+        sameLetter.append(letter)
+    }
+    
+    return true
+}
+print(checkString(input: "Ignacio"))
+
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 10")
+print("")
+
+let unique = "the lazy dog jumped over the something"
+let tok =  unique.components(separatedBy:"o")
+print(tok.count-1)
+
+
+print("")
+print("-----------------------------------------------------")
+print("Question Number 11")
+print("")
+
+var arrayOne = [0, 0, 0, 0, 0]
+var arrayTwo = [0, 1, 2, 3, 4]
+var arrayThree = [0, 2, 4, 6, 8]
+var arrayFour = [0, 3, 6, 9, 12]
+var arrayFive = [0, 4, 8, 12, 16]
+
+
+
+print(arrayOne)
+print(arrayTwo)
+print(arrayThree)
+print(arrayFour)
+print(arrayFive)
+
+func sumOfEvenOne(_ arra: [Int]) -> Int {
+    return arra.reduce(0, +)
+}
+
+var num1 = sumOfAll(arrayTwo)
+var num2 = sumOfAll(arrayFour)
+
+func sumOfAllArrays() -> Int {
+    return num1 + num2
+}
+
+print("")
+print("Sum of line 2 and 4")
+print(sumOfAllArrays())
+print("")
